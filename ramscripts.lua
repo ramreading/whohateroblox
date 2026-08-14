@@ -1,4 +1,3 @@
--- ramscripts.lua — no types, works on any executor
 local HttpGet = game.HttpGet
 local GameId = game.GameId
 
