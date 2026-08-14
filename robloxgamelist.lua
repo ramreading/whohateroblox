@@ -2,8 +2,8 @@ local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 
 local allowedPlaces = {
-    [139252529145498]  = "https://raw.githubusercontent.com/ramreading/whohateroblox/refs/heads/main/bloodebt.lua",
-    [87541610558346] = "https://raw.githubusercontent.com/ramreading/whohateroblox/refs/heads/main/bloodebt.lua",
+    [139252529145498]  = "https://raw.githubusercontent.com/ramreading/rescripts/refs/heads/main/blooddebt.lua",
+    [87541610558346] = "https://raw.githubusercontent.com/ramreading/rescripts/refs/heads/main/blooddebt.lua",
 }
 
 local currentPlaceId = game.PlaceId
