@@ -2,8 +2,8 @@ local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 
 local allowedPlaces = {
-    [4483381587] = "Pet Simulator X",
-    [920987237]  = "Blox Fruits",
+    [139252529145498]  = "https://raw.githubusercontent.com/ramreading/whohateroblox/refs/heads/main/bloodebt.lua",
+    [87541610558346] = "https://raw.githubusercontent.com/ramreading/whohateroblox/refs/heads/main/bloodebt.lua",
 }
 
 local currentPlaceId = game.PlaceId
