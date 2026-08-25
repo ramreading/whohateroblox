@@ -1,7 +1,8 @@
-local HubName = "Ramread1ng Hub"
+local HubName = "read1ng.Hub"
 
 local SupportedGames = {
-    [139252529145498] = "https://raw.githubusercontent.com/ramreading/rescripts/refs/heads/main/blooddebt.lua"
+    [139252529145498] = "https://raw.githubusercontent.com/ramreading/rescripts/refs/heads/main/blooddebt.lua",
+    [87541610558346] = "https://raw.githubusercontent.com/ramreading/rescripts/refs/heads/main/blooddebt.lua
 }
 
 local gameObject = game
@@ -20,7 +21,6 @@ if not coreGui then
     coreGui = localPlayer:WaitForChild("PlayerGui")
 end
 
--- Create notification GUI
 local screenGui = Instance.new("ScreenGui")
 screenGui.Name = HubName .. "Notifications"
 screenGui.Parent = coreGui
@@ -41,7 +41,6 @@ local uiPadding = Instance.new("UIPadding")
 uiPadding.Parent = mainFrame
 uiPadding.PaddingBottom = UDim.new(0, 20)
 
--- Function to create a notification
 local function createNotification(title, description, imageId)
     local notificationFrame = Instance.new("Frame")
     notificationFrame.Size = UDim2.new(1, 0, 0, 80)
@@ -103,7 +102,6 @@ local function createNotification(title, description, imageId)
     closeButton.Font = Enum.Font.GothamBold
     closeButton.Parent = contentFrame
 
-    -- Animate in
     local slideIn = tweenService:Create(
         contentFrame,
         TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out),
@@ -111,7 +109,6 @@ local function createNotification(title, description, imageId)
     )
     slideIn:Play()
 
-    -- Close button functionality
     closeButton.MouseButton1Click:Connect(function()
         closeButton.Active = false
 
@@ -135,7 +132,6 @@ local function createNotification(title, description, imageId)
     end)
 end
 
--- Show suggestions for other supported games
 local function showGameSuggestions()
     for placeId, _ in pairs(SupportedGames) do
         if placeId ~= currentPlaceId then
@@ -154,7 +150,6 @@ local function showGameSuggestions()
     end
 end
 
--- Main loader function
 local function loadScript()
     local scriptUrl = SupportedGames[currentPlaceId]
 
