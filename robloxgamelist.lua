@@ -6,17 +6,12 @@ local allowedPlaces = {
     [87541610558346] = "https://raw.githubusercontent.com/ramreading/rescripts/refs/heads/main/blooddebt.lua",
 }
 
-local currentPlaceId = game.PlaceId
-local gameName = allowedPlaces[currentPlaceId]
-
-if not gameName then
-    local names = {}
-    for _, name in pairs(allowedPlaces) do
-        table.insert(names, name)
-    end
-    pcall(function()
-        player:Kick(msg)
+local function showNotification(text)
+    local success, err = pcall(function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "RamHub",
+            Text = "Unsupported game.",
+            Duration = 5,
+        })
     end)
-
-    return 
 end
