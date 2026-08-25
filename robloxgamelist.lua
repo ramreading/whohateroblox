@@ -1,8 +1,7 @@
 local HubName = "read1ng.Hub"
 
 local SupportedGames = {
-    [139252529145498] = "https://raw.githubusercontent.com/ramreading/rescripts/refs/heads/main/blooddebt.lua",
-    [87541610558346] = "https://raw.githubusercontent.com/ramreading/rescripts/refs/heads/main/blooddebt.lua"
+    [139252529145498] = "https://raw.githubusercontent.com/ramreading/rescripts/refs/heads/main/blooddebt.lua"
 }
 
 local gameObject = game
