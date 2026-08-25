@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ramreading/whohateroblox/refs/heads/main/robloxgamelist.lua", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ramreading/whohateroblox/main/robloxgamelist.lua"))()
